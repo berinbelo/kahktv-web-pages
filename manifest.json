@@ -1,0 +1,56 @@
+{
+  "name": "KahKTV - O Streaming da Família",
+  "short_name": "KahKTV",
+  "description": "Plataforma IPTV Dark Cinematic da família com Canais Ao Vivo, Filmes VOD, Séries e Match Center.",
+  "start_url": "./",
+  "id": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B0E14",
+  "theme_color": "#FF7A00",
+  "categories": ["entertainment", "video"],
+  "icons": [
+    {
+      "src": "icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Canais Ao Vivo",
+      "url": "./?tab=live",
+      "description": "Acessar transmissões ao vivo"
+    },
+    {
+      "name": "Filmes VOD",
+      "url": "./?tab=movies",
+      "description": "Acessar catálogo de filmes"
+    },
+    {
+      "name": "Match Center",
+      "url": "./?tab=matches",
+      "description": "Classificação e jogos de futebol"
+    }
+  ]
+}
