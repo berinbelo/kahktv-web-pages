@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141824"/>
+      <stop offset="100%" stop-color="#080A0F"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9433"/>
+      <stop offset="100%" stop-color="#FF5500"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="#FF7A00" stroke-width="6" stroke-opacity="0.3"/>
+  
+  <!-- Glowing TV Antennas -->
+  <path d="M190 130 L256 195 L322 130" fill="none" stroke="url(#orangeGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+  
+  <!-- Stylized "K" with Play Triangle integrated -->
+  <g transform="translate(136, 175)">
+    <!-- Vertical Bar of K -->
+    <rect x="20" y="30" width="48" height="200" rx="18" fill="url(#orangeGrad)"/>
+    
+    <!-- Upper Diagonal arm -->
+    <path d="M68 135 L160 45 C168 37 182 43 182 54 L182 66 C182 74 178 82 172 88 L108 148 Z" fill="url(#orangeGrad)"/>
+    
+    <!-- Lower Diagonal Play Triangle arm -->
+    <path d="M78 130 L188 206 C198 213 194 230 180 230 L166 230 C158 230 150 226 144 221 L68 160 Z" fill="url(#orangeGrad)"/>
+    
+    <!-- Play Pulse Icon inside -->
+    <circle cx="210" cy="130" r="14" fill="#FF7A00" opacity="0.9"/>
+  </g>
+</svg>
